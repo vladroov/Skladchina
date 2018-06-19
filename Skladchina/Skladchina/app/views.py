@@ -27,7 +27,7 @@ def contact(request):
         'app/contact.html',
         {
             'title':'Contact',
-            'message':'Your contact page.',
+            'message':'Skladchina contact page.',
             'year':datetime.now().year,
         }
     )
@@ -40,7 +40,20 @@ def about(request):
         'app/about.html',
         {
             'title':'About',
-            'message':'Your application description page.',
+            'message':'Skladchina description.',
+            'year':datetime.now().year,
+        }
+    )
+
+def shoppage(request):
+    """Renders the shop page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/shopping.html',
+        {
+            'title':'Shop',
+            'message':'Skladchina sell&buy page.',
             'year':datetime.now().year,
         }
     )

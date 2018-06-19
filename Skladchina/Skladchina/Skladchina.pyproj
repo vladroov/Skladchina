@@ -55,6 +55,7 @@
     <Folder Include="Skladchina\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\templates\app\shop-page.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
